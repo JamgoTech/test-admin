@@ -41,7 +41,7 @@ const dataProvider = {
             headers: {
               Authorization: "Token WpCINI6OGVXmv0rIYya4RHyqNe4t0eel" 
             }  
-          })  ,
+          })  
           .then(function (response)) {
               return response.results
           }
