@@ -1,0 +1,109 @@
+[
+    {
+        "id": 328045,
+        "table_id": 56854,
+        "name": "Name",
+        "order": 0,
+        "type": "text",
+        "primary": true,
+        "text_default": ""
+    },
+    {
+        "id": 328046,
+        "table_id": 56854,
+        "name": "Category",
+        "order": 1,
+        "type": "single_select",
+        "primary": false,
+        "select_options": [
+            {
+                "id": 66097,
+                "value": "opt1",
+                "color": "dark-gray"
+            },
+            {
+                "id": 66098,
+                "value": "opt2",
+                "color": "dark-blue"
+            }
+        ]
+    },
+    {
+        "id": 328047,
+        "table_id": 56854,
+        "name": "Completed",
+        "order": 2,
+        "type": "boolean",
+        "primary": false
+    },
+    {
+        "id": 328048,
+        "table_id": 56854,
+        "name": "Client",
+        "order": 3,
+        "type": "link_row",
+        "primary": false,
+        "link_row_table": 56856,
+        "link_row_related_field": 328062
+    },
+    {
+        "id": 328049,
+        "table_id": 56854,
+        "name": "Project Lead",
+        "order": 4,
+        "type": "link_row",
+        "primary": false,
+        "link_row_table": 56857,
+        "link_row_related_field": 328068
+    },
+    {
+        "id": 328050,
+        "table_id": 56854,
+        "name": "Project Team",
+        "order": 5,
+        "type": "link_row",
+        "primary": false,
+        "link_row_table": 56857,
+        "link_row_related_field": 328069
+    },
+    {
+        "id": 328051,
+        "table_id": 56854,
+        "name": "Kickoff Date",
+        "order": 6,
+        "type": "date",
+        "primary": false,
+        "date_format": "ISO",
+        "date_include_time": false,
+        "date_time_format": "24"
+    },
+    {
+        "id": 328052,
+        "table_id": 56854,
+        "name": "Due Date",
+        "order": 7,
+        "type": "date",
+        "primary": false,
+        "date_format": "ISO",
+        "date_include_time": false,
+        "date_time_format": "24"
+    },
+    {
+        "id": 328053,
+        "table_id": 56854,
+        "name": "Notes",
+        "order": 8,
+        "type": "long_text",
+        "primary": false
+    },
+    {
+        "id": 328054,
+        "table_id": 56854,
+        "name": "Tasks",
+        "order": 9,
+        "type": "link_row",
+        "primary": false,
+        "link_row_table": 56855,
+        "link_row_related_field": 328056
+    }
+]
