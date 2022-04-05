@@ -34,14 +34,18 @@ const axios = require('axios')
 //  });
 
 const dataProvider = {
-    "getList": (resource, params) => 
+    getList: (resource, params) =>  {
         axios({
             method: "GET",
             url: "https://api.baserow.io/api/database/rows/table/"+tables[resource]+"/?user_field_names=true",
             headers: {
               Authorization: "Token WpCINI6OGVXmv0rIYya4RHyqNe4t0eel" 
-            }
-          }),
+            }  
+          })  ,
+          .then(function (response)) {
+              return response.results
+          }
+    }  
 //    getOne:     (resource, params) => Promise,
 //    getMany:    (resource, params) => Promise,
 //    getManyReference: (resource, params) => Promise,
@@ -51,7 +55,8 @@ const dataProvider = {
         headers: {
           Authorization: "Token WpCINI6OGVXmv0rIYya4RHyqNe4t0eel" ,
         data: params,
-      }),
+      })
+    },
 //    update:     (resource, params) => Promise,
 //    updateMany: (resource, params) => Promise,
 //    delete:     (resource, params) => Promise,
