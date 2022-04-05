@@ -45,23 +45,23 @@ const dataProvider = {
           .then(function (response) {
               return response.results
           });
-    }  
+    },  
 //    getOne:     (resource, params) => Promise,
 //    getMany:    (resource, params) => Promise,
 //    getManyReference: (resource, params) => Promise,
-    create:     (resource, params) => axios({
-        method: "POST",
-        url: "https://api.baserow.io/api/database/rows/table/"+tables[resource]+"/?user_field_names=true",
-        headers: {
-          Authorization: "Token WpCINI6OGVXmv0rIYya4RHyqNe4t0eel" ,
-        data: params,
-      })
-    },
+//    create:     (resource, params) => axios({
+//        method: "POST",
+//        url: "https://api.baserow.io/api/database/rows/table/"+tables[resource]+"/?user_field_names=true",
+//        headers: {
+//          Authorization: "Token WpCINI6OGVXmv0rIYya4RHyqNe4t0eel" ,
+//        data: params,
+//      })
+//    },
 //    update:     (resource, params) => Promise,
 //    updateMany: (resource, params) => Promise,
 //    delete:     (resource, params) => Promise,
 //    deleteMany: (resource, params) => Promise,
-      })
+//      })
 }
 
 
