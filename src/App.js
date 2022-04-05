@@ -44,7 +44,7 @@ const dataProvider = {
           })  
           .then(function (response) {
               return response.results
-          }
+          });
     }  
 //    getOne:     (resource, params) => Promise,
 //    getMany:    (resource, params) => Promise,
