@@ -7,7 +7,7 @@ import Dashboard from "./Dashboard";
 import { projectList } from "./Project";
 import axios from "axios";
 
-const tables = {"projects": 56856, "clients": 56857}
+const tables = {"projects": 56856, "clients": 56857};
 
 // const httpClient = (url, options = {}) => {
 //    options.user = {
@@ -23,7 +23,7 @@ const tables = {"projects": 56856, "clients": 56857}
 
 /////// Data Provider //// 
 
-const axios = require('axios')
+// const axios = require('axios')
 
 //const table_56856 = axios.create({  // one table = one resource
 //    baseURL: "https://api.baserow.io/api/database/rows/table/56856/?user_field_names=true",
