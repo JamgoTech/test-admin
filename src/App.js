@@ -43,8 +43,11 @@ const dataProvider = {
             }  
           })  
           .then(function (response) {
-              return response.results
-          });
+              return response.results;
+          })
+         .catch(function (error) {
+             console.log(error);
+         });
     },  
 //    getOne:     (resource, params) => Promise,
 //    getMany:    (resource, params) => Promise,
